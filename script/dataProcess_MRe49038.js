@@ -2,6 +2,7 @@ function runValidate(form){
 
     validateName(form);
     validateREstate(form);
+    validateLoc(form);
 } 
 
 function validateName(form){
@@ -14,42 +15,49 @@ function validateName(form){
 
     else {
         name.setCustomValidity("");
-        processData(form);
+        //processData(form);
         return true;
     }
     
 }
 
+
+
+function validateREstate(form){
+    var radio = form.elements['status'];
+    var rental = document.getElementById('rental');
+    var housing = document.getElementById('housing');
+
+    if((!rental.checked && !housing.checked)){
+        // radio.setCustomValidity("Please select real estate");
+         alert("Please select real estate.");
+         return false;
+    }
+
+    // else {
+    //     // processData(form);
+    // }
+}
+
 function validateLoc(form){
     var estate = form.elements["estate"];
+    var van = document.getElementById('loc1');
+    var bur = document.getElementById('loc2');
+    var sur = document.getElementById('loc3');
+    var con = document.getElementById('loc4');
 
-    if(estate.validity.valueMissing){
-        estate.setCustomValidity("Please select");
+    if(!van.checked && !bur.checked && !sur.checked && !con.checked){
+        //estate.setCustomValidity("Please select location");
+        alert("Please select preferred location.");
         return false;
     }
 
     else{
-        estate.setCustomValidity("");
+        processData(form);
+        // estate.setCustomValidity("");
         return true;
     }
 
-}
-
-function validateREstate(form){
-    var radio = form.elements["status"];
-    var status;
-
-    for(let i =0; i < radio.length; i++){
-        if(radio[i].checked){
-            status = radio[i].value;
-            break;
-        }
-    }
-
-    if(status == "undefined"){
-        radio.setCustomValidity("Please select real estate");
-        console.log("hi");
-    }
 }
 
 function processData(form){
