@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+    /* Image from: https://unsplash.com/@brenoassis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */
+    background-image: url(../images/bg.jpg);
+}
+
+body {
+    width: 80%;
+    border: 1px solid #1D1E2C;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #F7EBEC;
+    min-height: 800px;
+    justify-content: center;
+    line-height: 1.5;
+    font-family: 'Trebuchet MS', sans-serif;
+    
+}
+
+.body2 {
+    background-color: #c7e8f3;
+}
+
+.body3 {
+    background-color: #c5e99b;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    width: 50%;
+    text-align: center;
+    line-height: 2em;
+    float: left;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    background-color: #59656F;
+    display: block;
+    border: 1px solid white;
+    
+}
+
+nav > ul > li> a:hover {
+    background-color: #DDBDD5;
+    color: white;
+    border-bottom: 3px solid black;
+}
+
+div{
+    display:flex;
+    flex-flow: row wrap;                
+}
+
+div>*{
+    flex: 1 0 100px;
+    margin: 10px 10px;                
+}
+
+section#tips{
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+legend{
+    background-color: slategray;
+    padding: 8px;
+    border-radius: 0.5em;
+    color:whitesmoke;
+}
+
+div:last-child>*{
+    border-radius: 0.5em;
+}
+
+img{
+    width: 200px;
+    
+}
+
+form {
+    display:flex;
+    flex-flow: row wrap;                
+}
+
+form > fieldset{
+    flex: 1 2 500px;
+    max-width: 700px;
+    margin: 20px;
+}
+
+.container{
+    width: 1100px;
+    max-width: 100%;
+    margin:0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 0 15px grey;
+    padding: 10px 20px;
+    align-self: normal;
+}
+
+.card h4 {
+    font-size: large;
+    flex-basis: 3px;
+    text-align: center;
+}
+
+.card p { 
+    margin-bottom: 10px;
+    flex-basis: 10px;
+    
+}
+
+section#article {
+    min-width: 100px;
+    align-items: center;
+    margin: 50px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 790px) {
+
+    div#tips{
+        width: 300px;
+    }
+    
+}

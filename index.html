@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vancouver Real Estate</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Mary Requillo">
+
+        <link href="css/style_MRe49038.css" rel="stylesheet">
+        <script src="script/dataProcess_MRe49038.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Vancouver Real Estate Rental & Housing</h1>
+            <p>Finding your dream house or just finding somewhere to stay is challenging especially when there are several factors that needs to be considered.
+                One of the most important factor is your budget. You may want the most beautiful and secure home but in the end we need to find some place that will fit our budget.
+                <br>
+                <br>
+                Here in Vancouver Real Estate Rental & Housing, we will help you find your abode that not only fits but also other importants details as well.
+            </p>
+
+        </header>
+        <nav>
+            <ul>
+                <li><a href="page2_MRe49038.html">Rental</a></li>
+                <li><a href="page3_Mre49038.html">Housing</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <article>
+            <section>
+                <form name="myform" action='' method="get">
+                    <fieldset>
+                        <legend>Fill out the form below</legend>
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" 
+                            placeholder="Enter your name" required>
+                        </div>
+                        <div>
+                            <label>Real Estate</label>
+                            <span id="estate">
+                                <input type="radio" name="status" id="rental" value="Rental">Rental <br>
+                                <input type="radio" name="status" id="housing" value="Housing">Housing
+                            </span>
+                        </div> 
+                        <div>
+                            <label>Preferred Location</label>
+                                <span>
+                                    <input type="checkbox" name="location" id="loc1" value="Vancouver">Vancouver Area <br>
+                                    <input type="checkbox" name="location" id="loc2" value="Burnaby">Burnaby Area <br>
+                                    <input type="checkbox" name="location" id="loc3" value="Surrey">Surrey Area <br>
+                                    <input type="checkbox" name="location" id="loc4" value="Country Side">Country Side <br>
+                                </span>
+                        </div>
+                        <div>
+                            <label for="parking_id">Parking</label>
+                            <select name="parking" id="parking_id" required>
+                                <option value="Wparking">with Parking</option>
+                                <option value="Woparking">without Parking</option>                             
+                            </select>
+                        </div> 
+                        <div>
+                            <!-- notice the different if you use input type submit or button -->
+                            <input type="submit" value="Submit Form" 
+                                onClick="return runValidate(this.form)">
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Submitted data</legend>
+                    <p id="output"></p>
+                </fieldset>
+            </section>
+            <h2>Tips in finding your right house for purchase or rent</h2>
+            <section id="tips">
+                <div id="tips">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1i1KYJBPOzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="tips">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7GQF2q4zIA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+            <p>Tips from <cite>https://www.youtube.com/embed/1i1KYJBPOzo</cite> and <cite>https://www.youtube.com/embed/1i1KYJBPOzo</cite></p>
+            <section id="article">
+                <p>Here's an interesting article from <cite><a href="https://wowa.ca/bc-housing-market">https://wowa.ca/bc-housing-market:</a></cite>
+                </p>
+                <h2>British Columbia Housing Market as of October 2022</h2>
+                <p>
+                    BC home prices regained their footing in October 2022 as average prices increased slightly on a monthly basis. For October 2022, the average home price in British Columbia was $932,979. That’s a decrease of 3% year-over-year but up 1% compared to last month. Meanwhile, there were 5,242 residential sales in B.C. for the month of October 2022, a 5% month-over-month decrease and a 45.5% year-over-year decrease.
+                </p>
+                <p>
+                    October 2022’s average home price is now 3% lower compared to last year. That’s the first time that the province has seen a year-over-year decline in its average home price since before the pandemic. It’s still a relatively mild decline compared to Ontario’s housing market, which saw an 8.5% year-over-year decline in home prices, but fell behind the neighbouring Alberta housing market, which saw its provincial average home price increase by 2% year-over-year. Looking nationally, BC is outperforming Canada’s housing market, where Canada’s average home price has declined by 10% year-over-year for October 2022.
+                </p>
+                <p>
+                    Vancouver’s housing market remains the most expensive market to buy a home in Canada. For October 2022, the average residential home price in Greater Vancouver was $1,231,805, a 1% increase year-over-year and relatively unchanged compared to last month. That's higher than the Greater Toronto Area's average home price of $1,089,428, which decreased by 6% year-over-year.
+                </p>
+                <p>
+                    The Fraser Valley, which includes Surrey, Abbotsford, and Langley, is the province’s second most expensive housing market this month. The average home price in the Fraser Valley was $952,950, a decrease of 8% year-over-year. The province's third most expensive housing market was Victoria. The average home price in Victoria was $943,834 in October 2022, a decrease of 4% year-over-year.
+                </p>
+                <p>
+                    Home prices in Powell River remain volatile. The average home price in Powell River is up 14% year-over-year to $577,107, which is up 4% compared to last month, but far below the $707,707 average price seen in August 2022.
+                </p>
+                <p>
+                    Looking within Greater Vancouver, the average sale price of a detached home was $2,032,651. Townhouses and attached homes had an average sale price of $1,216,435, while condo apartments had an average sale price of $769,290.
+                </p>
+            </section>
+            
+        </article>
+    </body>
+</html>
