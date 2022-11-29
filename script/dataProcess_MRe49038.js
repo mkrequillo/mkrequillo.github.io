@@ -2,24 +2,22 @@ function runValidate(form){
 
     validateName(form);
     validateREstate(form);
-
-    processData(form);
-
-    return false;
 } 
 
 function validateName(form){
     var name = form.elements["name"];
 
-    if(name.validity.valueMissing){
+    if (name.validity.valueMissing){
         name.setCustomValidity("Please enter your name here");
         return false;
     }
 
-    else{
+    else {
         name.setCustomValidity("");
+        processData(form);
         return true;
     }
+    
 }
 
 function validateLoc(form){
